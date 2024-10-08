@@ -1,0 +1,10 @@
+<launch>
+  <!-- Start the multiply_two_floats server node -->
+  <node name="multiply_two_floats_server" pkg="lab5" type="multiply_two_floats_server.py" output="screen"/>
+
+  <!-- Start the multiply_two_floats client node -->
+  <node name="multiply_two_floats_client" pkg="lab5" type="multiply_two_floats_client.py" output="screen">
+    <param name="x" value="2.5" />
+    <param name="y" value="4" />
+  </node>
+</launch>

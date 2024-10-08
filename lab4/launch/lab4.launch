@@ -1,0 +1,19 @@
+<launch>
+  <!-- Visit http://wiki.ros.org/roslaunch/XML for reference -->
+
+  <!-- Start a node named 'turtlesim_node_lab5', using the 'turtlesim_node' executable of 'turtlesim' package -->
+  <node name="turtlesim_node_lab5" pkg="turtlesim" type="turtlesim_node"/>
+
+  <!-- TODO 1: Start a node named 'turtle_teleop_key_lab5', using the 'turtle_teleop_key' executable of 'turtlesim' package  -->
+  <node name="turtle_teleop_key_lab5" pkg="turtlesim" type="turtle_teleop_key"/>
+
+  <!-- Spawn a new turtle named 'turtle2' at [4.0, 4.0, 0] -->
+  <node name="rosservicecall" pkg="rosservice" type="rosservice" args="call --wait /spawn 4.0 4.0 0.0 'turtle2'"/>
+
+  <!-- TODO 2: Start a node named 'publisher_lab5', using the 'publisher.py' executable of 'lab4' package -->
+  <node name="publisher_lab5" pkg="lab4" type="publisher.py"/>
+
+  <!-- TODO 3: Start a node named 'follower_lab5', using the 'follower.py' executable of 'lab4' package -->
+  <node name="follower_lab5" pkg="lab4" type="follower.py"/>
+ 
+</launch>
