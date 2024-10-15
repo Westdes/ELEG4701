@@ -1,0 +1,4 @@
+rosrun rqt_reconfigure rqt_reconfigure
+
+rosrun dynamic_reconfigure dynparam get /move_base/local_costmap/inflation_layer
+{'enabled': True, 'inflate_unknown': False, 'cost_scaling_factor': 3.0, 'inflation_radius': 2.0, 'groups': {'id': 0, 'parent': 0, 'name': 'Default', 'type': '', 'state': True, 'groups': {}, 'parameters': {}, 'enabled': True, 'cost_scaling_factor': 3.0, 'inflation_radius': 2.0, 'inflate_unknown': False}}
