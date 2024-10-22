@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="rosbag" type="play" name="rosbag" args="--loop $(find lab7)/lab7_scan.bag"/>
+</launch>
